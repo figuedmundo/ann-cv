@@ -64,26 +64,7 @@ body {
     position: relative;
 }
 
-.running-man-icon {
-    position: absolute;
-    top: -45px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90px;
-    height: 90px;
-    /* Removed CSS border/background to rely on the image's own ring/design. */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-}
 
-.running-man-icon img {
-    height: 100% !important;
-    width: 100% !important;
-    object-fit: contain;
-}
 
 .brand-text {
     display: flex;
@@ -206,10 +187,6 @@ h3 {
     flex-grow: 1;
     /* Takes up available space */
     position: relative;
-    margin-top: 30px;
-    /* Space for the top half of the badge */
-    padding-top: 50px;
-    /* Push content down so it doesn't overlap with badge */
 }
 
 .experience-list {
@@ -422,13 +399,7 @@ h3 {
         flex-direction: column;
     }
 
-    .running-man-icon {
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 60px;
-        height: 60px;
-        top: -30px;
-    }
+
 
     .brand-text h1 {
         font-size: 32px;
