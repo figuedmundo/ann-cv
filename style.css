@@ -6,6 +6,8 @@
     --text-white: #ffffff;
     --badge-pink-start: #e88a8d;
     --badge-pink-end: #cd5c64;
+    --badge-blue: #1C5278;
+    /* Deep blue from reference image */
 }
 
 * {
@@ -35,8 +37,8 @@ body {
     height: 297mm;
     background-color: var(--primary-purple);
     color: var(--text-white);
-    padding: 20px 30px;
-    /* Reduced padding from 30px 40px */
+    padding: 40px 30px 60px 30px;
+    /* Top: 40px, Bottom: 60px (increased to balance visual weight of badge) */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -61,11 +63,25 @@ body {
 }
 
 .running-man-icon {
-    /* Using a pseudo-element or SVG for the running man would be best. 
-       For now, styling the icon container */
-    margin-right: 15px;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    /* Removed CSS border/background to rely on the image's own ring/design. */
+    border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.running-man-icon img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain;
 }
 
 .brand-text {
@@ -188,6 +204,11 @@ h3 {
 .experience-box {
     flex-grow: 1;
     /* Takes up available space */
+    position: relative;
+    margin-top: 30px;
+    /* Space for the top half of the badge */
+    padding-top: 50px;
+    /* Push content down so it doesn't overlap with badge */
 }
 
 .experience-list {
