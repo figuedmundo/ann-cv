@@ -29,7 +29,9 @@ body {
     /* font-family: 'Microsoft JhengHei', 'Heiti TC', sans-serif; */
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 0;
+    /* Reset padding for mobile to allow full width */
+    min-height: 100vh;
 }
 
 .cv-container {
@@ -75,7 +77,6 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .running-man-icon img {
@@ -398,8 +399,17 @@ h3 {
         height: auto;
         min-height: 100vh;
         box-shadow: none;
-        padding: 20px;
+        padding: 30px;
+        /* Increased padding from 20px */
         border-radius: 0;
+    }
+
+    /* Fix blue phone number on mobile */
+    .contact-phone,
+    .contact-phone a,
+    a[href^="tel:"] {
+        color: var(--text-white) !important;
+        text-decoration: none !important;
     }
 
     .cv-header {
