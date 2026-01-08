@@ -62,6 +62,34 @@ This project is ready for deployment on platforms like Vercel or Netlify.
 
 See [deploy.md](./deploy.md) for detailed instructions.
 
+## 📄 PDF Export
+
+You can generate a high-quality PDF version of the CV using the included Python script.
+
+### Prerequisites
+-   Python 3.x
+-   Playwright
+
+### Installation
+1.  Install the required package:
+    ```bash
+    pip install playwright
+    ```
+2.  Install the Playwright browser binaries:
+    ```bash
+    playwright install chromium
+    ```
+
+### Usage
+Run the script to generate the PDF:
+```bash
+python export_cv.py
+```
+This will create `index.pdf` in the same directory. You can also specify a different input file:
+```bash
+python export_cv.py my_cv.html
+```
+
 ## 📄 License
 
 This project is open source and available for personal use.
