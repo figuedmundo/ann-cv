@@ -242,7 +242,7 @@ h3 {
 }
 
 .profile-image {
-    width: 60%;
+    width: 59%;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -256,7 +256,7 @@ h3 {
 }
 
 .right-bottom-panel {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -264,19 +264,18 @@ h3 {
 
 .courses-box {
     height: 60%;
-    display: flex;
-    flex-direction: column;
 }
 
 .courses-list {
     font-size: 14.5px;
-    /* Aligned with experience */
-    line-height: 1.8;
-    /* Slightly relaxed for list */
     margin-left: 5px;
-    /* Reduced from 20px */
     flex-grow: 1;
     letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center */
+    gap: 8px;
 }
 
 .name-badge {
