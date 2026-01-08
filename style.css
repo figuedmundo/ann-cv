@@ -16,7 +16,15 @@
 
 body {
     background-color: #333;
+    /* Typography Options */
+    /* Option 1: Modern & Clean (Current) */
     font-family: 'Noto Sans TC', sans-serif;
+
+    /* Option 2: Elegant & Formal (Serif) - Uncomment below line to use */
+    /* font-family: 'Noto Serif TC', serif; */
+
+    /* Option 3: Standard System (Safe) - Uncomment below line to use */
+    /* font-family: 'Microsoft JhengHei', 'Heiti TC', sans-serif; */
     display: flex;
     justify-content: center;
     padding: 40px;
