@@ -353,11 +353,15 @@ h3 {
     }
 
     .english-name,
-    .chinese-name {
+    .chinese-name,
+    .contact-email,
+    .contact-phone {
         text-shadow: none;
         border: none;
         outline: none;
         background: transparent;
+        text-decoration: none;
+        /* Ensure no underlines if auto-linked */
     }
 }
 
