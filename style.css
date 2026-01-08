@@ -299,3 +299,91 @@ h3 {
         background: transparent;
     }
 }
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        background-color: #222;
+    }
+
+    .cv-container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        box-shadow: none;
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .cv-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+    .running-man-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .brand-text h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .brand-text h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .open-badge {
+        position: static;
+        margin: 10px auto;
+        transform: rotate(0);
+    }
+
+    .experience-list {
+        font-size: 14px;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: 300px; /* Fixed height for consistency */
+        margin-bottom: 20px;
+    }
+
+    .right-bottom-panel {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .courses-box {
+        height: auto;
+    }
+
+    .name-badge {
+        height: auto;
+        padding: 20px;
+    }
+
+    .english-name {
+        font-size: 36px;
+    }
+
+    .chinese-name {
+        position: static;
+        text-align: right;
+        margin-top: 5px;
+    }
+}
