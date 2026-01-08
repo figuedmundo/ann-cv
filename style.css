@@ -35,7 +35,8 @@ body {
     height: 297mm;
     background-color: var(--primary-purple);
     color: var(--text-white);
-    padding: 30px 40px;
+    padding: 20px 30px;
+    /* Reduced padding from 30px 40px */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -75,7 +76,8 @@ body {
 
 .brand-text h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 38px;
+    font-size: 28px;
+    /* Reduced from 38px */
     line-height: 0.9;
     font-weight: 700;
     letter-spacing: 1px;
@@ -83,11 +85,11 @@ body {
 
 .brand-text h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    /* Reduced from 30px */
     line-height: 0.9;
     letter-spacing: 1px;
     text-align: right;
-    /* Aligns visually better sometimes */
 }
 
 .reg-mark {
@@ -136,24 +138,50 @@ body {
     border: 2px dashed var(--dashed-gold);
     border-radius: 12px;
     padding: 15px 20px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
+    display: flex;
+    /* Flex layout for side-by-side */
+    gap: 15px;
+    /* Gap between title and content */
 }
 
 h3 {
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    /* Remove bottom margin */
     display: flex;
     align-items: center;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    /* Vertical writing mode */
+    text-orientation: upright;
+    /* Keep characters upright (optional, depends on look) */
+    /* Usually for Chinese vertical, upright is good. For 'Teaching Experience' (English/Chinese mix), 
+       mixed might be better. Let's try standard vertical-rl first which rotates Latin but stacks CJK. */
+    /* Actually, for mixed content, 'vertical-lr' or 'vertical-rl' with default text orientation helps.
+       However, the user mentioned they know Mandarin can be written vertically. 
+       Let's stick to vertical-rl. */
+    color: var(--dashed-gold);
+    /* Change to Gold */
+    border-right: 1px dashed rgba(238, 191, 91, 0.3);
+    /* Optional separator */
+    padding-left: 5px;
+    padding-right: 5px;
+    /* Add some breathing room around title */
+    justify-content: center;
+    /* Center vertically in the container */
 }
 
 .triangle {
     font-size: 12px;
-    margin-right: 10px;
-    transform: scale(1.2, 0.8);
-    /* Squat triangle */
+    margin-bottom: 10px;
+    /* Space between triangle and text in vertical mode */
+    margin-right: 0;
+    /* Reset margin */
+    transform: rotate(90deg);
+    /* Point towards content */
 }
 
 /* Experience Section */
@@ -168,6 +196,8 @@ h3 {
     /* Slightly larger for readability */
     line-height: 1.6;
     margin-left: 5px;
+    flex-grow: 1;
+    /* Expand to fill space */
 }
 
 .experience-list li {
@@ -191,11 +221,16 @@ h3 {
 }
 
 .cert-list {
-    font-size: 14px;
-    line-height: 1.8;
-    margin-left: 20px;
-    letter-spacing: 2px;
-    /* Wide spacing as seen in image */
+    font-size: 14.5px;
+    /* Aligned with experience */
+    line-height: 1.6;
+    /* Matched with experience */
+    margin-left: 5px;
+    /* Reduced from 20px */
+    letter-spacing: 1px;
+    /* Slightly reduced for better fit */
+    flex-grow: 1;
+    /* Expand to fill space */
 }
 
 /* Bottom Section */
@@ -233,43 +268,70 @@ h3 {
     flex-direction: column;
 }
 
-.courses-box p {
-    font-size: 16px;
+.courses-list {
+    font-size: 14.5px;
+    /* Aligned with experience */
     line-height: 1.8;
-    margin-left: 20px;
+    /* Slightly relaxed for list */
+    margin-left: 5px;
+    /* Reduced from 20px */
     flex-grow: 1;
+    letter-spacing: 1px;
 }
 
 .name-badge {
     background: linear-gradient(135deg, var(--badge-pink-start), var(--badge-pink-end));
     border-radius: 15px;
-    padding: 10px 15px;
+    padding: 15px 25px;
+    /* Increased side padding */
     height: 35%;
     display: flex;
     flex-direction: column;
-    /* Stacked layout inside? Actually side by side or stacked... 
-                             Image: "ANN" large on left/center-left, "林庭安" small bottom right. */
-    position: relative;
+    justify-content: space-between;
+    /* Push rows to top and bottom edges */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    /* Adding some 3D feel */
     border-bottom: 4px solid #a84b54;
+}
+
+.badge-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Align items vertically in their row */
+    width: 100%;
 }
 
 .english-name {
     font-family: 'Oswald', sans-serif;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-left: 10px;
-    margin-top: 5px;
     letter-spacing: 2px;
+    line-height: 1;
+}
+
+.contact-email {
+    font-family: 'Oswald', sans-serif;
+    /* Matches design */
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.contact-phone {
+    font-family: 'Oswald', sans-serif;
+    /* Matches design */
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
 }
 
 .chinese-name {
-    position: absolute;
-    bottom: 12px;
-    right: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -341,6 +403,29 @@ h3 {
         text-align: center;
     }
 
+    /* Undo vertical titles on mobile */
+    .dashed-box {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    h3 {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        border-right: none;
+        border-bottom: 2px dashed rgba(238, 191, 91, 0.3);
+        padding-bottom: 5px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .triangle {
+        transform: rotate(0deg);
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
     .open-badge {
         position: static;
         margin: 10px auto;
@@ -358,7 +443,8 @@ h3 {
 
     .profile-image {
         width: 100%;
-        height: 300px; /* Fixed height for consistency */
+        height: 300px;
+        /* Fixed height for consistency */
         margin-bottom: 20px;
     }
 
@@ -385,5 +471,92 @@ h3 {
         position: static;
         text-align: right;
         margin-top: 5px;
+    }
+}
+
+/* Personal Data Section */
+.personal-box {
+    margin-bottom: 15px;
+}
+
+.personal-data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.personal-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-label {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--dashed-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.personal-value {
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+/* Experience Grid Layout */
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* Reduced gap from 8px */
+    font-size: 14.5px;
+    flex-grow: 1;
+    /* Ensure grid takes remaining width */
+}
+
+.experience-row {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    /* Ratio for company vs title */
+    gap: 15px;
+    align-items: baseline;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+}
+
+.experience-row:last-child {
+    border-bottom: none;
+}
+
+.company {
+    font-weight: 700;
+    color: var(--dashed-gold);
+    text-align: right;
+}
+
+.job-title {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Mobile adjustments for grids */
+@media screen and (max-width: 768px) {
+    .experience-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .company {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .personal-data-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
