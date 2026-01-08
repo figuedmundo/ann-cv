@@ -1,0 +1,288 @@
+:root {
+    --primary-purple: #4a0e68;
+    /* Deeper purple */
+    --dashed-gold: #eebf5b;
+    /* Gold/Yellow for dashed lines */
+    --text-white: #ffffff;
+    --badge-pink-start: #e88a8d;
+    --badge-pink-end: #cd5c64;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.cv-container {
+    width: 210mm;
+    height: 297mm;
+    background-color: var(--primary-purple);
+    color: var(--text-white);
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* Ensure exact A4 sizing behavior */
+    overflow: hidden;
+}
+
+/* Header */
+.cv-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.running-man-icon {
+    /* Using a pseudo-element or SVG for the running man would be best. 
+       For now, styling the icon container */
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.brand-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    line-height: 0.9;
+    letter-spacing: 1px;
+    text-align: right;
+    /* Aligns visually better sometimes */
+}
+
+.reg-mark {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.open-badge {
+    position: absolute;
+    right: 30px;
+    /* Adjust based on centering */
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    transform: rotate(15deg);
+}
+
+.badge-text-top {
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.badge-dial {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.hours {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1;
+    display: block;
+}
+
+/* Shared Box Styles */
+.dashed-box {
+    border: 2px dashed var(--dashed-gold);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.triangle {
+    font-size: 12px;
+    margin-right: 10px;
+    transform: scale(1.2, 0.8);
+    /* Squat triangle */
+}
+
+/* Experience Section */
+.experience-box {
+    flex-grow: 1;
+    /* Takes up available space */
+}
+
+.experience-list {
+    list-style: none;
+    font-size: 14.5px;
+    /* Slightly larger for readability */
+    line-height: 1.6;
+    margin-left: 5px;
+}
+
+.experience-list li {
+    padding-left: 10px;
+    border-left: 2px solid transparent;
+    /* Alignment placeholder */
+    margin-bottom: 3px;
+    position: relative;
+}
+
+.experience-list li::before {
+    content: "|";
+    position: absolute;
+    left: -5px;
+    color: var(--text-white);
+    font-weight: bold;
+    font-size: 12px;
+    top: 2px;
+}
+
+/* Cert Section */
+.cert-box {
+    margin-bottom: 15px;
+}
+
+.cert-highlight {
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.cert-list {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    /* Wide spacing as seen in image */
+}
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    gap: 15px;
+    height: 32%;
+    /* Approximately 1/3 of the page */
+}
+
+.profile-image {
+    width: 60%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.right-bottom-panel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.courses-box {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.name-badge {
+    background: linear-gradient(135deg, var(--badge-pink-start), var(--badge-pink-end));
+    border-radius: 15px;
+    padding: 10px 15px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    /* Stacked layout inside? Actually side by side or stacked... 
+                             Image: "ANN" large on left/center-left, "林庭安" small bottom right. */
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Adding some 3D feel */
+    border-bottom: 4px solid #a84b54;
+}
+
+.english-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.chinese-name {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        width: 100%;
+        height: 100vh;
+    }
+}
