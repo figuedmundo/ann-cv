@@ -33,4 +33,4 @@ wheels/
 venv/
 
 # Generated PDF
-# *.pdf
+*.pdf
