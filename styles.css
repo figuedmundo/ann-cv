@@ -122,6 +122,11 @@ h1.cv-name {
   opacity: 0.5;
 }
 
+.contact-line a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Editorial Body Layout */
 .cv-body-layout {
   display: grid;
