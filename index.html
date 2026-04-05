@@ -4,89 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANN - Personal Trainer CV</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="cv-root">
-        <header class="cv-hero">
-            <div class="cv-photo">
-                <img src="ann_trx.png" alt="Portrait of ANN, certified personal trainer">
+        <!-- Kept the header as you liked it -->
+        <header class="cv-hero fade-in" style="animation-delay: 0.1s;">
+            <div class="cv-photo-wrapper">
+                <div class="cv-photo-decor"></div>
+                <img src="ann_trx.png" alt="Portrait of ANN, certified personal trainer" class="cv-photo">
             </div>
             <div class="hero-text">
                 <h1 class="cv-name">ANN</h1>
                 <p class="cv-subtitle">Certified Personal Trainer with extensive experience in group and private instruction.</p>
+                <div id="contact-section" class="contact-line contact-card">
+                    <span>ann810613@hotmail.com</span>
+                    <span class="contact-separator">/</span>
+                    <span>0980-404-516</span>
+                </div>
             </div>
         </header>
 
+        <!-- New Minimalist, Mature Editorial Layout -->
         <div class="cv-body-layout">
             <main class="cv-main-col">
-                <section id="experience-section">
-                    <h2>教學經歷</h2>
-                    <div class="experience-matrix experience-table">
-                        <div class="experience-row">
-                            <div class="experience-col-title">私人教練 / 私人體能訓練</div>
-                            <div class="experience-col-details">福華飯店<br>萬華-CV<br>私人客製化課程</div>
+                <section id="experience-section" class="editorial-section fade-in" style="animation-delay: 0.2s;">
+                    <h2 class="section-title">教學經歷 <span class="title-en">Experience</span></h2>
+                    
+                    <div class="editorial-list experience-table">
+                        <div class="editorial-row">
+                            <div class="row-meta">私人體能訓練</div>
+                            <div class="row-content">
+                                <h3 class="row-title">私人教練</h3>
+                                <p class="row-details">福華飯店 — 萬華-CV<br>私人客製化課程</p>
+                            </div>
                         </div>
-                        <div class="experience-row">
-                            <div class="experience-col-title">團體體能與專項訓練</div>
-                            <div class="experience-col-details">內湖-妮飛<br>東區-FitStudio<br>Go-Gym<br>力格健力<br>TRX, Thump Boxing<br>肌力循環</div>
+                        
+                        <div class="editorial-row">
+                            <div class="row-meta">團體體能與專項</div>
+                            <div class="row-content">
+                                <h3 class="row-title">團體訓練</h3>
+                                <p class="row-details">內湖-妮飛 — 東區-FitStudio — Go-Gym — 力格健力<br>TRX, Thump Boxing, 肌力循環</p>
+                            </div>
                         </div>
-                        <div class="experience-row">
-                            <div class="experience-col-title">專業專項教練</div>
-                            <div class="experience-col-details">蘆洲-Energy<br>全真瑜珈Anytime Fitness<br>交互式拳擊</div>
+
+                        <div class="editorial-row">
+                            <div class="row-meta">專業專項</div>
+                            <div class="row-content">
+                                <h3 class="row-title">專項教練</h3>
+                                <p class="row-details">蘆洲-Energy — 全真瑜珈Anytime Fitness<br>交互式拳擊</p>
+                            </div>
                         </div>
                     </div>
                 </section>
             </main>
 
             <aside class="cv-side-col">
-                <section id="certifications-section">
-                    <h2>專業證照</h2>
-                    <div class="cert-grid">
-                        <div class="cert-card">
-                            <img src="images/ace.png" alt="ACE Certified Personal Trainer credential mark" class="cert-icon">
-                            <div class="cert-label">ACE CPT</div>
-                            <div class="cert-descriptor">ACE Certified Personal Trainer</div>
+                <section id="certifications-section" class="editorial-section fade-in" style="animation-delay: 0.3s;">
+                    <h2 class="section-title">專業證照 <span class="title-en">Certifications</span></h2>
+                    
+                    <div class="editorial-list minimal-certs cert-grid">
+                        <!-- Removed heavy images, relying on mature typography -->
+                        <div class="cert-item">
+                            <img src="images/ace.png" alt="ACE CPT" class="cert-badge">
+                            <span class="cert-acronym">ACE CPT</span>
+                            <span class="cert-name">ACE Certified Personal Trainer</span>
                         </div>
-                        <div class="cert-card">
-                            <img src="images/trx.png" alt="TRX Suspension Training credential mark" class="cert-icon">
-                            <div class="cert-label">TRX</div>
-                            <div class="cert-descriptor">TRX-STC Suspension Training</div>
+                        <div class="cert-item">
+                            <img src="images/trx.png" alt="TRX" class="cert-badge">
+                            <span class="cert-acronym">TRX</span>
+                            <span class="cert-name">TRX-STC Suspension Training</span>
                         </div>
-                        <div class="cert-card">
-                            <img src="images/box.png" alt="THUMP Boxing Level 1 and 2 credential mark" class="cert-icon">
-                            <div class="cert-label">THUMP BOXING</div>
-                            <div class="cert-descriptor">Level 1 & 2</div>
+                        <div class="cert-item">
+                            <img src="images/box.png" alt="THUMP BOXING" class="cert-badge">
+                            <span class="cert-acronym">THUMP BOXING</span>
+                            <span class="cert-name">Level 1 & 2</span>
                         </div>
-                        <div class="cert-card">
-                            <img src="images/kettle.png" alt="Kettlebell Quest IKT Level 1 credential mark" class="cert-icon">
-                            <div class="cert-label">Kettlebell Quest</div>
-                            <div class="cert-descriptor">IKT Level 1</div>
+                        <div class="cert-item">
+                            <img src="images/kettle.png" alt="Kettlebell Quest" class="cert-badge">
+                            <span class="cert-acronym">Kettlebell Quest</span>
+                            <span class="cert-name">IKT Level 1</span>
                         </div>
-                        <div class="cert-card">
-                            <img src="images/cpr.png" alt="CPR and AED certification mark" class="cert-icon">
-                            <div class="cert-label">CPR+AED</div>
-                            <div class="cert-descriptor">Certification</div>
+                        <div class="cert-item">
+                            <img src="images/cpr.png" alt="CPR+AED" class="cert-badge">
+                            <span class="cert-acronym">CPR+AED</span>
+                            <span class="cert-name">Certification</span>
                         </div>
-                        <div class="cert-card">
-                            <img src="images/pesa.png" alt="Bodyweight Training C-level credential mark" class="cert-icon">
-                            <div class="cert-label">Bodyweight Training</div>
-                            <div class="cert-descriptor">C-level</div>
+                        <div class="cert-item">
+                            <img src="images/pesa.png" alt="Bodyweight Training" class="cert-badge">
+                            <span class="cert-acronym">Bodyweight Training</span>
+                            <span class="cert-name">C-level</span>
                         </div>
                     </div>
                 </section>
+                
 
-                <section id="contact-section">
-                    <h2>Contact & Profile Information</h2>
-                    <div class="contact-card">
-                        <ul>
-                            <li><strong>Name:</strong> ANN</li>
-                            <li><strong>Email:</strong> ann810613@hotmail.com</li>
-                            <li><strong>Phone:</strong> 0980-404-516</li>
-                            <li><strong>Specialties:</strong> TRX, Interactive Boxing, Strength & Conditioning</li>
-                        </ul>
-                    </div>
-                </section>
             </aside>
         </div>
     </div>
