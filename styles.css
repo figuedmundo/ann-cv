@@ -315,6 +315,17 @@ h1.cv-name {
   }
 }
 
+@media (hover: none) {
+  .cert-badge {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+  
+  .cert-acronym {
+    color: var(--accent-gold);
+  }
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
   #cv-root {
