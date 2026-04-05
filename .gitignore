@@ -35,3 +35,6 @@ venv/
 # Generated PDF
 *.pdf
 .tmp/
+
+# Local tool configs (contain secrets / machine-specific)
+opencode.json
