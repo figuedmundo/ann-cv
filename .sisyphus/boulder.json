@@ -1,0 +1,125 @@
+{
+  "active_plan": "/Users/edmundo.figueroaherbas@medirect.com.mt/projects/personal/ann-cv-2/.sisyphus/plans/ann-cv-layout.md",
+  "started_at": "2026-04-05T18:57:55.976Z",
+  "session_ids": [
+    "ses_2a10cba91ffeuc3SY5ayHAnOyM",
+    "ses_2a0fbeca4ffesR3sPSMsyg4C8U",
+    "ses_2a0f91abdffedQNJJssln78ME9",
+    "ses_2a0f2e1b9ffePktCRbUqHKy5xp",
+    "ses_2a0ebc163ffeyELfjceklChwsY",
+    "ses_2a0e6d578ffeKzst9q1V0rJaS6",
+    "ses_2a0e194c3ffel9A7Mx2Xyt7aVE",
+    "ses_2a0c72065ffeLlrO4CigDq43Gw",
+    "ses_2a0c20a57ffel3Hx3bIVEUs6qH",
+    "ses_2a0bd30eaffe7QPJ7r7Ktv3mQ0",
+    "ses_2a0b797caffehxHnGCxyVGBdjX",
+    "ses_2a0afc22affeLXTwTAku5DLzUV",
+    "ses_2a0ac98e4ffej1GqA1ThL7GLHY",
+    "ses_2a0ac9367ffewlfTAOo3TOSU4R",
+    "ses_2a0ac9c61fferIuzeQZceMHjIW",
+    "ses_2a0ac95c7ffehWIoileMM6AM8M"
+  ],
+  "plan_name": "ann-cv-layout",
+  "agent": "atlas",
+  "task_sessions": {
+    "todo:1": {
+      "task_key": "todo:1",
+      "task_label": "1",
+      "task_title": "Lock content contract and asset mapping",
+      "session_id": "ses_2a0fbeca4ffesR3sPSMsyg4C8U",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-04-05T19:00:41.516Z"
+    },
+    "todo:2": {
+      "task_key": "todo:2",
+      "task_label": "2",
+      "task_title": "Build semantic HTML scaffold and deterministic selectors",
+      "session_id": "ses_2a0f91abdffedQNJJssln78ME9",
+      "agent": "Sisyphus-Junior",
+      "category": "visual-engineering",
+      "updated_at": "2026-04-05T19:04:31.824Z"
+    },
+    "todo:3": {
+      "task_key": "todo:3",
+      "task_label": "3",
+      "task_title": "Encode the experience matrix and section content hierarchy",
+      "session_id": "ses_2a0f2e1b9ffePktCRbUqHKy5xp",
+      "agent": "Sisyphus-Junior",
+      "category": "visual-engineering",
+      "updated_at": "2026-04-05T19:13:54.872Z"
+    },
+    "todo:4": {
+      "task_key": "todo:4",
+      "task_label": "4",
+      "task_title": "Establish the shared CSS design system and screen-safe typography",
+      "session_id": "ses_2a0ebc163ffeyELfjceklChwsY",
+      "agent": "Sisyphus-Junior",
+      "category": "visual-engineering",
+      "updated_at": "2026-04-05T19:20:04.291Z"
+    },
+    "todo:5": {
+      "task_key": "todo:5",
+      "task_label": "5",
+      "task_title": "Add a lightweight post-implementation validation harness",
+      "session_id": "ses_2a0e6d578ffeKzst9q1V0rJaS6",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-low",
+      "updated_at": "2026-04-05T19:25:33.288Z"
+    },
+    "todo:6": {
+      "task_key": "todo:6",
+      "task_label": "6",
+      "task_title": "Implement the premium desktop composition",
+      "session_id": "ses_2a0e194c3ffel9A7Mx2Xyt7aVE",
+      "agent": "Sisyphus-Junior",
+      "category": "visual-engineering",
+      "updated_at": "2026-04-05T19:53:55.191Z"
+    },
+    "todo:7": {
+      "task_key": "todo:7",
+      "task_label": "7",
+      "task_title": "Style the photo, certification cards, and contact card modules",
+      "session_id": "ses_2a0c72065ffeLlrO4CigDq43Gw",
+      "agent": "Sisyphus-Junior",
+      "category": "visual-engineering",
+      "updated_at": "2026-04-05T19:59:44.982Z"
+    },
+    "todo:8": {
+      "task_key": "todo:8",
+      "task_label": "8",
+      "task_title": "Implement the mobile-first readable responsive layout",
+      "session_id": "ses_2a0c20a57ffel3Hx3bIVEUs6qH",
+      "agent": "Sisyphus-Junior",
+      "category": "visual-engineering",
+      "updated_at": "2026-04-05T20:05:17.625Z"
+    },
+    "todo:9": {
+      "task_key": "todo:9",
+      "task_label": "9",
+      "task_title": "Tune the print stylesheet for single-page A4 export",
+      "session_id": "ses_2a0bd30eaffe7QPJ7r7Ktv3mQ0",
+      "agent": "Sisyphus-Junior",
+      "category": "deep",
+      "updated_at": "2026-04-05T20:10:49.639Z"
+    },
+    "todo:10": {
+      "task_key": "todo:10",
+      "task_label": "10",
+      "task_title": "Polish accessibility, contrast, and final validation outputs",
+      "session_id": "ses_2a0afc22affeLXTwTAku5DLzUV",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-high",
+      "updated_at": "2026-04-05T20:24:50.800Z"
+    },
+    "final-wave:f1": {
+      "task_key": "final-wave:f1",
+      "task_label": "F1",
+      "task_title": "Plan Compliance Audit — oracle",
+      "session_id": "ses_2a0ac9c61fferIuzeQZceMHjIW",
+      "agent": "oracle",
+      "category": "",
+      "updated_at": "2026-04-05T20:30:49.579Z"
+    }
+  }
+}

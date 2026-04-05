@@ -1,0 +1,75 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - img "Portrait of ANN, certified personal trainer" [ref=e5]
+    - generic [ref=e6]:
+      - heading "ANN" [level=1] [ref=e7]
+      - paragraph [ref=e8]: Certified Personal Trainer with extensive experience in group and private instruction.
+  - generic [ref=e9]:
+    - main [ref=e10]:
+      - generic [ref=e11]:
+        - heading "教學經歷" [level=2] [ref=e12]
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]: 私人教練 / 私人體能訓練
+            - generic [ref=e16]:
+              - text: 福華飯店
+              - text: 萬華-CV
+              - text: 私人客製化課程
+          - generic [ref=e17]:
+            - generic [ref=e18]: 團體體能與專項訓練
+            - generic [ref=e19]:
+              - text: 內湖-妮飛
+              - text: 東區-FitStudio
+              - text: Go-Gym
+              - text: 力格健力
+              - text: TRX, Thump Boxing
+              - text: 肌力循環
+          - generic [ref=e20]:
+            - generic [ref=e21]: 專業專項教練
+            - generic [ref=e22]:
+              - text: 蘆洲-Energy
+              - text: 全真瑜珈Anytime Fitness
+              - text: 交互式拳擊
+    - complementary [ref=e23]:
+      - generic [ref=e24]:
+        - heading "專業證照" [level=2] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - img "ACE Certified Personal Trainer credential mark" [ref=e28]
+            - generic [ref=e29]: ACE CPT
+            - generic [ref=e30]: ACE Certified Personal Trainer
+          - generic [ref=e31]:
+            - img "TRX Suspension Training credential mark" [ref=e32]
+            - generic [ref=e33]: TRX
+            - generic [ref=e34]: TRX-STC Suspension Training
+          - generic [ref=e35]:
+            - img "THUMP Boxing Level 1 and 2 credential mark" [ref=e36]
+            - generic [ref=e37]: THUMP BOXING
+            - generic [ref=e38]: Level 1 & 2
+          - generic [ref=e39]:
+            - img "Kettlebell Quest IKT Level 1 credential mark" [ref=e40]
+            - generic [ref=e41]: Kettlebell Quest
+            - generic [ref=e42]: IKT Level 1
+          - generic [ref=e43]:
+            - img "CPR and AED certification mark" [ref=e44]
+            - generic [ref=e45]: CPR+AED
+            - generic [ref=e46]: Certification
+          - generic [ref=e47]:
+            - img "Bodyweight Training C-level credential mark" [ref=e48]
+            - generic [ref=e49]: Bodyweight Training
+            - generic [ref=e50]: C-level
+      - generic [ref=e51]:
+        - heading "Contact & Profile Information" [level=2] [ref=e52]
+        - list [ref=e54]:
+          - listitem [ref=e55]:
+            - strong [ref=e56]: "Name:"
+            - text: ANN
+          - listitem [ref=e57]:
+            - strong [ref=e58]: "Email:"
+            - text: ann810613@hotmail.com
+          - listitem [ref=e59]:
+            - strong [ref=e60]: "Phone:"
+            - text: 0980-404-516
+          - listitem [ref=e61]:
+            - strong [ref=e62]: "Specialties:"
+            - text: TRX, Interactive Boxing, Strength & Conditioning
