@@ -33,9 +33,17 @@ open index.html
 ```
 
 ### 2. Export to PDF
-To generate the exact, single-page A4 PDF (`index.pdf`), run the export script. *(Requires Python 3 and Playwright).*
+To generate the exact, single-page A4 PDF, run the export script. *(Requires Python 3 and Playwright).*
 ```bash
+# Default: index.html → CV.pdf
+python3 export_cv.py
+
+# Specify input file
 python3 export_cv.py index.html
+
+# Specify input and output name (.pdf appended automatically if omitted)
+python3 export_cv.py index.html CV.pdf
+python3 export_cv.py index.html resume
 ```
 
 ### 3. Run Validation

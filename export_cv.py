@@ -34,15 +34,20 @@ def generate_pdf(input_path, output_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python export_cv.py [input_html_file]")
-        # Default to index.html in the same directory
+        print("Usage: python export_cv.py <input_html> [output_pdf]")
         input_file = "index.html"
+        output_file = "CV.pdf"
     else:
         input_file = sys.argv[1]
+        if len(sys.argv) >= 3:
+            output_file = (
+                sys.argv[2] if sys.argv[2].endswith(".pdf") else sys.argv[2] + ".pdf"
+            )
+        else:
+            output_file = "CV.pdf"
 
     if not os.path.exists(input_file):
         print(f"Error: File {input_file} not found.")
         sys.exit(1)
 
-    output_file = os.path.splitext(input_file)[0] + ".pdf"
     generate_pdf(input_file, output_file)
