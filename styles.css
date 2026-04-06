@@ -122,17 +122,14 @@ h1.cv-name {
   opacity: 0.5;
 }
 
-.contact-line a[href^="tel:"] {
-  color: inherit;
-  text-decoration: none;
-}
-
 .contact-pill {
-  padding: 0.3rem 0.75rem;
+  /* padding: 0.3rem 0.75rem;  */
+  padding: 0.3rem 0.4rem; 
   border: 1px solid transparent;
   border-radius: 100px;
   transition: all 0.3s ease;
-  cursor: default;
+  text-decoration: none;
+  color: inherit;
 }
 
 .contact-pill:hover {
