@@ -379,7 +379,7 @@ h1.cv-name {
     width: 210mm;
     background: #ffffff !important;
     color: #000000 !important;
-    font-size: 9pt;
+    font-size: 11pt;
   }
   
   * {
@@ -405,100 +405,100 @@ h1.cv-name {
   }
 
   #cv-root {
-    padding: 15mm;
+    padding: 20mm 22mm;
   }
 
   .cv-hero {
     flex-direction: row;
     text-align: left;
-    gap: 8mm;
-    padding-bottom: 6mm;
-    margin-bottom: 6mm;
+    gap: 14mm;
+    padding-bottom: 16mm;
+    margin-bottom: 14mm;
   }
 
   .cv-photo-wrapper {
-    width: 35mm;
-    height: 35mm;
+    width: 48mm;
+    height: 48mm;
     flex-shrink: 0;
   }
 
   .cv-subtitle {
-    margin: 0 0 2mm 0;
-    font-size: 8pt;
+    margin: 0 0 4mm 0;
+    font-size: 10pt;
   }
 
   .contact-line {
     justify-content: flex-start;
-    font-size: 7.5pt;
+    font-size: 9.5pt;
   }
 
   h1.cv-name {
-    font-size: 18pt;
-    margin-bottom: 2mm;
+    font-size: 24pt;
+    margin-bottom: 4mm;
   }
 
   .cv-body-layout {
     grid-template-columns: 1.4fr 1fr;
-    gap: 8mm;
+    gap: 18mm;
   }
 
   .editorial-row {
-    grid-template-columns: 30mm 1fr;
-    gap: 3mm;
-    padding: 3mm 0;
+    grid-template-columns: 32mm 1fr;
+    gap: 4mm;
+    padding: 8mm 0;
   }
 
   .editorial-section {
-    margin-bottom: 4mm;
+    margin-bottom: 10mm;
   }
 
   .section-title {
-    font-size: 10pt;
-    margin-bottom: 4mm;
-    padding-bottom: 2mm;
+    font-size: 12pt;
+    margin-bottom: 8mm;
+    padding-bottom: 3mm;
   }
 
   .title-en {
-    font-size: 7pt;
+    font-size: 8.5pt;
   }
 
   .row-meta {
-    font-size: 6.5pt;
+    font-size: 8.5pt;
   }
 
   .row-title {
-    font-size: 9pt;
-    margin-bottom: 1mm;
+    font-size: 11pt;
+    margin-bottom: 2mm;
   }
 
   .row-details {
-    font-size: 7.5pt;
-    line-height: 1.5;
+    font-size: 9.5pt;
+    line-height: 1.7;
   }
 
   .cert-item {
-    grid-template-columns: 5mm 22mm 1fr;
-    gap: 2mm;
-    padding-bottom: 2.5mm;
+    grid-template-columns: 6mm 26mm 1fr;
+    gap: 3mm;
+    padding-bottom: 5mm;
   }
 
   .cert-badge {
-    width: 4mm;
-    height: 4mm;
+    width: 6mm;
+    height: 6mm;
     opacity: 1 !important;
     filter: grayscale(100%) !important;
   }
 
   .cert-acronym {
-    font-size: 7.5pt;
+    font-size: 9.5pt;
   }
 
   .cert-name {
-    font-size: 7.5pt;
+    font-size: 9.5pt;
   }
 
   .minimal-certs {
-    gap: 2mm;
+    gap: 5mm;
   }
 
   body {
