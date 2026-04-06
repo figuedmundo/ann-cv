@@ -214,6 +214,31 @@ h1.cv-name {
   line-height: 1.8;
 }
 
+/* Gym Pill Badges */
+.gym-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.gym-pill {
+  display: inline-block;
+  padding: 0rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--line-color);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.gym-pill:hover {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  background: rgba(194, 167, 98, 0.06);
+}
+
 /* Certifications (Minimalist) */
 .minimal-certs {
   gap: 1.5rem;
